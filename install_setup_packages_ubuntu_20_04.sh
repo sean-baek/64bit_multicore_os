@@ -1,6 +1,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install net-tools -y
+sudo apt install build-essential -y
 sudo apt install vim -y
 sudo apt install gcc -y
 sudo apt install gcc-multilib -y
