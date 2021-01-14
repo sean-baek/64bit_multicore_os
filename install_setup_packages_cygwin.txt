@@ -9,6 +9,8 @@ make : 4.3-1
 patchutils : 0.3.4-1
 cygport : 0.34.0-1
 nasm : 2.13.01-1
+
+<!--
 flexdll : 0.37-1
 gcc-g++ : 10.2.0-1
 gcc-tools-epoch1-autoconf : 2.59-2
@@ -26,6 +28,7 @@ autoconf2.1 : 2.13-12
 autoconf2.5 : 2.69-4
 texinfo : 6.7-1
 texinfo-tex : 6.7-1
+-->
 
 Interpreters
 python2 : 2.7.18-1
@@ -34,6 +37,7 @@ Libs
 libgmp-devel : 6.2.1-1
 libmpfr-devel : 4.1.0-1
 libmpc-devel : 1.2.1-1
+<!--
 libiconv-devel : 1.16-2
 libiconv2 : 1.16-2
 libgcc1 : 10.2.0-1
@@ -60,4 +64,4 @@ libglibmm2.4_1 : 2.54.1-2
 libncurses++w10 : 6.1-1.20190727
 libncurses-devel : 6.1-1.20190727
 libncursesw10 : 6.1-1.20190727
-
+-->
