@@ -1,14 +1,14 @@
-Devel
-binutils : 2.34-1(src : O)
-bison : 3.0.4-1
-gcc-core : 10.2.0-1(src : O)
-flex : 2.6.4-2
-cygwin32-libiconv : 1.14-2
-libtool : 2.4.6-3
-make : 4.3-1 
-patchutils : 0.3.4-1
-cygport : 0.34.0-1
-nasm : 2.13.01-1
+# Devel
+- binutils : 2.34-1(src : O)
+- bison : 3.0.4-1
+- gcc-core : 10.2.0-1(src : O)
+- flex : 2.6.4-2
+- cygwin32-libiconv : 1.14-2
+- libtool : 2.4.6-3
+- make : 4.3-1 
+- patchutils : 0.3.4-1
+- cygport : 0.34.0-1
+- nasm : 2.13.01-1
 
 <!--
 flexdll : 0.37-1
@@ -30,13 +30,13 @@ texinfo : 6.7-1
 texinfo-tex : 6.7-1
 -->
 
-Interpreters
-python2 : 2.7.18-1
+# Interpreters
+- python2 : 2.7.18-1
 
-Libs
-libgmp-devel : 6.2.1-1
-libmpfr-devel : 4.1.0-1
-libmpc-devel : 1.2.1-1
+# Libs
+- libgmp-devel : 6.2.1-1
+- libmpfr-devel : 4.1.0-1
+- libmpc-devel : 1.2.1-1
 <!--
 libiconv-devel : 1.16-2
 libiconv2 : 1.16-2
