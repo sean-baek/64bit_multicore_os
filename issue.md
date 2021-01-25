@@ -23,3 +23,8 @@
 -> 명령어가 안 먹는다.
 
 ---
+
+# 5. 우분투 20.04-1 버전에서 gcc -m32 -o test32 test.c 테스트 할 시 bits/libc-header-start.h 파일이 없다고 뜨는 에러.
+-> sudo apt-get install gcc-multilib g++-multilib 명령으로 패키지 설치하면 완료.
+
+-> https://my-repo.tistory.com/12 참고.
