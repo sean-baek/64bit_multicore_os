@@ -43,3 +43,8 @@
 -> sudo apt-get install gcc-multilib g++-multilib 명령으로 패키지 설치하면 완료.
 
 -> https://my-repo.tistory.com/12 참고.
+
+---
+
+# 5. 우분투 20.04-1 버전에서 책의 120p qemu 실행 시 -localtime 옵션이 되지 않음.
+-> https://www.mankier.com/1/qemu 와 https://wiki.qemu.org/Features/RemovedFeatures 를 참고하니 -rtc base=localtime으로 대체되었다고 되어있음.
