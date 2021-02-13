@@ -48,3 +48,7 @@
 
 # 5. 우분투 20.04-1 버전에서 책의 120p qemu 실행 시 -localtime 옵션이 되지 않음.
 -> https://www.mankier.com/1/qemu 와 https://wiki.qemu.org/Features/RemovedFeatures 를 참고하니 -rtc base=localtime으로 대체되었다고 되어있음.
+
+---
+# 6. windows10 64bit eclipse에서 build all하면 cannot run program "make" : Launching failed가 뜸
+-> https://yagi815.tistory.com/929 을 참고하여 mingw32-make.exe을 복사하여 make.exe로 이름을 바꾸어서 붙여넣기
