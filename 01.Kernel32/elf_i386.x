@@ -166,7 +166,7 @@ _edata = .; PROVIDE (edata = .);
   .data.rel.ro : { *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*) *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*) }
   .dynamic        : { *(.dynamic) }
   .got            : { *(.got) *(.igot) }
-  . = DATA_SEGMENT_RELRO_END (SIZEOF (.got.plt) >= 12 ? 12 : 0, .);
+/* . = DATA_SEGMENT_RELRO_END (SIZEOF (.got.plt) >= 12 ? 12 : 0, .); */
   .got.plt        : { *(.got.plt) *(.igot.plt) }
 /*********************************************************/
 /* 섹션 재배치로 인해 앞으로 이동된 부분 */
