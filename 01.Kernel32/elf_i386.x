@@ -15,17 +15,17 @@ SECTIONS
 
 /***************************************************************************/
 /* 섹션 재배치로 인해 앞으로 이동된 부분 */
-.text           :
-  {
-    *(.text.unlikely .text.*_unlikely .text.unlikely.*)
-    *(.text.exit .text.exit.*)
-    *(.text.startup .text.startup.*)
-    *(.text.hot .text.hot.*)
-    *(SORT(.text.sorted.*))
-    *(.text .stub .text.* .gnu.linkonce.t.*)
-    /* .gnu.warning sections are handled specially by elf.em.  */
-    *(.gnu.warning)
-  }
+.text 0x10200	:
+{
+  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+  *(.text.exit .text.exit.*)
+  *(.text.startup .text.startup.*)
+  *(.text.hot .text.hot.*)
+  *(SORT(.text.sorted.*))
+  *(.text .stub .text.* .gnu.linkonce.t.*)
+  /* .gnu.warning sections are handled specially by elf.em.  */
+  *(.gnu.warning)
+} = 0x90909090
 
 .rodata         : { *(.rodata .rodata.* .gnu.linkonce.r.*) }
 .rodata1        : { *(.rodata1) }
