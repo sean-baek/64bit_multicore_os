@@ -49,10 +49,29 @@
 # 5. 우분투 20.04-1 버전에서 책의 120p qemu 실행 시 -localtime 옵션이 되지 않음.
 -> https://www.mankier.com/1/qemu 와 https://wiki.qemu.org/Features/RemovedFeatures 를 참고하니 -rtc base=localtime으로 대체되었다고 되어있음.
 -> https://github.com/kkamagui/mint64os-examples issue로 등록해두었음
+
 ---
+
 # 6. windows10 64bit eclipse에서 build all하면 cannot run program "make" : Launching failed가 뜸
 -> https://yagi815.tistory.com/929 을 참고하여 mingw32-make.exe을 복사하여 make.exe로 이름을 바꾸어서 붙여넣기
 
 ---
+
 # 7. Ubuntu의 최신 QEMU에서 정상적으로 부트 로더와 가상 OS 이미지 테스트가 실행되지 않음
 -> http://jsandroidapp.cafe24.com/xe/qna/11322 을 참고하여 cmp al, 19에서 cmp al, 37로 바꾸었음
+
+---
+
+# 8. 책에서 7.2 part make 수행 시 링커 스크립트169번 라인 오류
+-> 주석 처리하여 빌드 오류를 방지 
+-> https://github.com/sean-baek/64bit_multicore_os/blob/main/01.Kernel32/elf_i386.x
+
+---
+
+# 9. 책에서 7.3 part FS64 OS의 makefile를 빌드하면 ./ImageMaker이 없다면서 빌드 오류
+-> 04.Utility/00.ImageMaker/ImageMaker라고 수정하여 ImageMaker를 참조하게 함.
+
+---
+
+# 10. ImageMaker.c에서 open() 함수 파라미터 중 O_BINARY가 없기 때문에 빌드 오류
+-> 총 4번의 open() 함수가 사용되는데, 모두 O_BINARY 옵션을 제거
