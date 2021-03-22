@@ -69,6 +69,7 @@
 ---
 
 # 9. 책에서 7.3 part FS64 OS의 makefile를 빌드하면 ./ImageMaker이 없다면서 빌드 오류
+-> ImageMaker 실행 파일의 경로를 지정해줘야 함.
 -> 04.Utility/00.ImageMaker/ImageMaker라고 수정하여 ImageMaker를 참조하게 함.
 
 ---
