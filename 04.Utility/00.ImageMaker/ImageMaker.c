@@ -11,7 +11,7 @@
 
 // 함수 선언
 int AdjustInSectorSize( int iFd, int iSourceSize );
-void WriteKernelInformation( int iTargetFd, int iTotalKernelSectorCout, int iKernel32SectorCount );
+void WriteKernelInformation( int iTargetFd, int iTotalKernelSectorCount, int iKernel32SectorCount );
 int CopyFile(int iSourceFd, int iTargetFd );
 
 // main 함수
@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 	int iSourceSize;
 
 	// 커맨드 라인 옵션 검사
-	if( argc < 3 )
+	if( argc < 4 )
 	{
 		fprintf(stderr, "[ERROR] ImageMaker BootLoader.bin Kernel32.bin Kernel64.bin\n");
 		exit( -1 );
@@ -145,6 +145,7 @@ void WriteKernelInformation( int iTargetFd, int iTotalKernelSectorCount, int iKe
 		exit( -1 );
 	}
 
+	// 부트 로더를 제외한 총 섹터 수 및 보호 모드 커널의 섹터 수 저장
 	usData = (unsigned short ) iTotalKernelSectorCount;
 	write( iTargetFd, &usData, 2 );
 	usData = ( unsigned short) iKernel32SectorCount;
